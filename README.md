@@ -13,8 +13,11 @@ Here are the supplementary files mentioned in our manuscript.
 
 ## supplementary trial
 ### overfitting analysis
-
+To test whether overfitting is a major reason of the observed relatively poor performance of neural networks in our study, we performed additional experiments on the real datasets. Specifically, we split the CITE-seq dataset into different portions as the training and testing sets, changing the ratio of number of samples over the number of features. The performance was evaluated using the RMSE on both training and test datasets. The number of features in each training set was fixed to 2000, whereas the numbers of samples ranged from 100 to 3600. The input is the denoised RNA data and CLR-transformed protein expression data of CITE-seq-CBMC.
 ### feature selection analysis
+To check if additional RNAs could be incorporated in the random forest model, we designed an experiment to incorporate 10 to 100 RNAs (in the increment of 10) in the model. The input is the denoised RNA data and CLR-transformed protein expression data of CITE-seq-CBMC.
+### DTs
+In order to further analyzing the component decision tree (DTs) of RF to gain more insight about its behavior, we calculated the feature importance of three different DTs randomly chosen from all DTs that were used to generate the RF model.
 
 
 
